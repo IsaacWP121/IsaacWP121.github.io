@@ -1,0 +1,249 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 1000;
+}
+
+html {
+    font-size: 10px;
+    font-family: "Lato", Arial, sans-serif;
+}
+
+
+table {
+    border-spacing: 25px;
+    font-size: 25px;
+}
+
+h1 {
+    padding-top: 20px;
+    font-size: 2em;
+    margin: auto;
+    font-weight:800;
+    padding-bottom: 10px;
+    color: rgb(0, 0, 0)
+}
+
+p {
+    width: 80%;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 1200;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+li {
+    width: 80%;
+    margin: auto;
+    font-size: 1.6em;
+    font-weight: 1200;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 1.5em;
+    width: 80%;
+    margin: auto;
+    font-weight:1200;
+    padding-bottom: 10px;
+    color: rgb(8, 6, 155)
+}
+
+h3 {
+    padding-top: 10px;
+    font-size: 1.1em;
+    width: 80%;
+    margin: auto;
+}
+
+.animation {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(-45deg, #0df892, #129acc, #f04f8d, #0df892);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-out infinite;
+    z-index: bottom;
+}
+
+.menu {
+    margin-top: 5%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 50px;
+    font-size: 200%;
+    display: table;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: top;
+    color: black;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu ul {
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding-bottom: 6px;
+    padding: 12px;
+    overflow: hidden;
+}
+  
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    display: inline;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+}
+.menu li a:link {
+    color:black
+
+}
+
+.menu li a:visited {
+    color:black
+
+}
+
+.menu li a:hover {
+    background-color: rgba(220, 220, 220, 0.953);
+}
+
+.main-box {
+    position: absolute;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
+    height: 80%;
+    font-size: 3rem;
+    background-color: rgba(248, 248, 248, 0.7);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main-box::-webkit-scrollbar {
+    display: none;
+}
+
+.About {
+    width: 80%;
+    font-size: 0.8em;
+    margin: auto;
+    text-align: center;
+    scroll-snap-type: y proximity;
+}
+
+
+.About hr {
+    width: 80%;
+    border-top: 2px solid black;
+    margin: auto;
+    animation: hr 15s infinite;
+}
+
+
+.Hobbies {
+    width: 80%;
+    font-size: 0.8em;
+    text-align: left;
+    list-style-position: inside;
+    scroll-snap-type: y proximity;
+}
+
+
+.Hobbies hr {
+    width: 80%;
+    border-top: 2px solid black;
+    margin: auto;
+}
+
+
+#ss {
+    display: block;
+    line-height: 200%;
+}
+
+.Goals h2 {
+    font-size: 1.5em;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-weight:1200;
+    padding-bottom: 10px;
+    color: rgb(8, 6, 155)
+}
+
+.Goals li {
+    font-size: 0.8em;
+}
+
+.Goals p {
+    font-size: 0.85em;
+}
+
+.Goals hr {
+    width: 80%;
+    border-top: 2px solid black;
+    margin: auto;
+    animation: hr 15s infinite;
+}
+
+#wrapper { 
+    width: 120%; 
+    height: auto;
+    padding-left: 10%; 
+    margin: auto;
+    clear: both;
+}
+
+.clear{
+    clear: both;
+}
+
+.Facts hr {
+    width: 80%;
+    border-top: 2px solid black;
+    margin: auto;
+}
+
+.Facts {
+    width: 80%;
+}
+
+.Facts ul {
+    padding-left: 25px;
+    font-size: 0.55em;
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+@keyframes hr {
+    0% {width: 80%}
+    50% {width: 40%}
+    100% {width:80%}
+}
